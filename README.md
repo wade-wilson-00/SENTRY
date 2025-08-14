@@ -1,91 +1,53 @@
-# 🛡️ Sentry — Mental Health Companion App
 
-Sentry is a MERN-stack mental health-focused web application that allows users to write journals, track mood trends with ML, and receive AI-powered coping tips.  
-It ensures privacy through encryption and promotes emotional well-being.
+# SENTRY
 
----
+Inspired by Robert Reynolds aka 'Sentry' from Marvel Comics a superhero always ready to help others who suffers.
 
-## 📌 Features
-- ✍️ **Journaling** — Securely store your thoughts (encrypted for privacy)
-- 🤖 **AI Sentiment Analysis** — Friendly feedback from AI
-- 😃 **Mood Tracking** — Emoji-based mood input + ML-powered mood detection
-- 📊 **Mood Trends** — Weekly/Monthly mood insights with charts
-- 🔒 **Secure User Accounts** — Authentication & hashed data
-- 🌐 **Responsive UI** — Clean and modern frontend
+Sentry is a MERN-stack Mental Health-focused web application that allows users to write journals, track mood with ML Prediction, and receive AI-powered coping tips and Resources that helps.
 
----
+It ensures privacy through encryption of Journals which provides a safe and secure environment that lets user express openly and freely, it highly promotes emotional well-being and importance of Mental Health.
 
-🛠 Tech Stack
 
-Frontend: React, Tailwind CSS, Framer Motion, Chart.js
+## Features
+
+✍️ Encrypted Journaling — Securely write and store personal thoughts with end-to-end encryption.
+
+🤖 AI Sentiment Analysis — Personalized and compassionate AI-generated feedback.
+
+😃 Mood Tracking — ML-powered mood detection from journal entries.
+
+🔒 Secure Authentication — User accounts protected with JWT authentication & bcrypt hashing.
+
+🌐 Responsive UI — Minimal, clean, and mobile-friendly design.
+
+
+## Tech Stack
+Frontend: React, Tailwind CSS, Framer Motion
+
 Backend: Node.js, Express.js, MongoDB, JWT, bcrypt
-AI Services: Python FastAPI microservices using Gemini API & Hugging Face Transformers
-Other Tools: Axios for API calls, dotenv for environment variables
 
----
+AI Services: Python FastAPI microservices using Gemini API & Hugging Face Transformers
+
+Other Tools: Axios for API calls, dotenv for environment variables.
+## Authors
+
+- Aman Gujamagadi - https://github.com/wade-wilson-00/
+
 
 ## 📂 Folder Structure
 Sentry/
-│── ai-service/      # FastAPI microservices for AI & ML analysis
-│── client/          # React frontend
-│   └── react-app/   # Main frontend application
-│── server/          # Express backend API
-│── README.md        # Project documentation
 
+│── ai-service/      
+│── client/          
+│   └── react-app/   
+│── server/          
+      
 
-## ⚙️ Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/wade-wilson-00/SENTRY.git
-   cd sentry
-   
-2️⃣ Setup Environment Variables
-
-Create .env files in the server and ai-service directories with the following values:
-
-server/.env
-   PORT=your_port
-   MONGODB_URI=your_mongo_connection_string
-   JWT_SECRET=your_jwt_secret_here
-
-ai-service/.env
-   OPENAI_API_KEY=your_openai_api_key_here
-   GEMINI_API_KEY=your_gemini_api_key_here
-
-3️⃣ Install Dependencies
-Frontend 
-    cd client/react-app
-    npm install react-router-dom axios framer-motion react-markdown react-icons 
-    
-Backend
-    cd server
-    npm install express axios cors dotenv mongoose jsonwebtoken bcrypt
-
-AI / ML Microservices
-    cd ai-service
-    pip install dotenv fastapi pydantic uvicorn transformers google-generativeai torch
-
-4️⃣ Run the Application
-Frontend
-    cd client/react-app
-    npm run dev
-
-Backend
-    cd server
-    node server.js
-
-AI ML MicroService
-    cd ai-service
-    uvicorn emotion_analyzer:app --reload --port 8002 #For Emotion ML model 
-    uvicorn gemini_analyzer:app --reload #For Gemini Analyzer
-
-📜 License
-
-MIT License — You are free to use, modify, and distribute this project for learning and personal use.
-
-
-
-
- 
-
+## ⚙️ Installation & Setup 
+Complete Guide on Installation for Sentry
+## 1️⃣ Clone the Repository
+git clone https://github.com/wade-wilson-00/SENTRY.git
+cd SENTRY
+## 1️⃣ Clone the Repository
+git clone https://github.com/wade-wilson-00/SENTRY.git
+cd SENTRY
