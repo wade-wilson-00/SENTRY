@@ -2,23 +2,16 @@
 # SENTRY
 
 [![Frontend: React](https://img.shields.io/badge/Frontend-React-blue)](https://reactjs.org)
-
 [![Styling: Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-teal)](https://tailwindcss.com)
-
 [![Animations: Framer Motion](https://img.shields.io/badge/Animations-Framer%20Motion-lightgrey)](https://www.framer.com/motion/)
 
 [![Backend: Node.js](https://img.shields.io/badge/Backend-Node.js-green)](https://nodejs.org)
-
 [![Framework: Express.js](https://img.shields.io/badge/Framework-Express.js-lightgrey)](https://expressjs.com)
-
 [![Database: MongoDB](https://img.shields.io/badge/Database-MongoDB-darkgreen)](https://www.mongodb.com)
-
 [![Auth: JWT & bcrypt](https://img.shields.io/badge/Auth-JWT%20%26%20bcrypt-orange)](https://jwt.io)
 
 [![AI: FastAPI](https://img.shields.io/badge/AI-FastAPI-blue)](https://fastapi.tiangolo.com)
-
 [![Transformers: Hugging Face](https://img.shields.io/badge/Transformers-Hugging%20Face-purple)](https://huggingface.co/transformers)
-
 [![APIs: Gemini](https://img.shields.io/badge/API-Gemini--)](https://developers.google.com/)
 
 ## Description
