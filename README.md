@@ -49,72 +49,8 @@ SENTRY/
    git clone https://github.com/wade-wilson-00/SENTRY.git
    cd SENTRY
 ````
+2. Setup Environment Variables
 
-2. **Setup server**
+Create .env files in the server and ai-service directories with the following values:
 
-   ```bash
-   cd server
-   npm install
-   ```
-
-3. **Setup client**
-
-   ```bash
-   cd ../client/react-app
-   npm install
-   ```
-
-4. **Setup AI service**
-
-   ```bash
-   cd ../../ai-service
-   pip install -r requirements.txt
-   ```
-
-5. **Environment Variables**
-   Each of the `server`, `client`, and `ai-service` folders should have a `.env` file. Sample variables:
-
-   ```
-   MONGO_URI=
-   JWT_SECRET=
-   GEMINI_API_KEY=
-   HUGGINGFACE_TOKEN=
-   ```
-
-6. **Run the steps**
-
-   * In `server`: `npm run dev`
-   * In `client/react-app`: `npm start`
-   * In `ai-service`: `uvicorn main:app --reload`
-
-7. **Visit the app:** `http://localhost:3000`
-
-## Usage
-
-* Register and authenticate your account securely.
-* Write private entries; sentiment and mood analysis happen automatically.
-* View your mood trends and receive AI-generated coping suggestions.
-
-## Contributing
-
-* Fork and create a new feature branch.
-* Commit with clear, meaningful messages.
-* Push and open a pull request describing your changes.
-
-## License
-
-MIT License
-
----
-
-## Explanation of the Badges
-
-Each badge reflects a key component of SENTRY’s tech stack:
-
-* React, Tailwind CSS, Framer Motion: Frontend framework, styling, and UI animation.
-* Node.js & Express.js: Backend runtime and web framework.
-* MongoDB: NoSQL database.
-* JWT & bcrypt: Authentication and password security.
-* FastAPI, Gemini API, Hugging Face Transformers: AI-powered features and sentiment analysis.
-
-Let me know if you'd like adjustments—maybe add a Contribution badge, CI status, or anything else!
+server/.env
