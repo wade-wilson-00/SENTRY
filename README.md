@@ -41,14 +41,19 @@ Other Tools: Chart.js for visualization, Axios for API requests, dotenv for conf
 📂 Project Structure
 Sentry/
 │── ai-service/      # AI and ML microservices (FastAPI)
+
 │── client/          # React frontend
+
 │── server/          # Express.js backend
+
 │── README.md
 
 ⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/wade-wilson-00/SENTRY.git
-cd SENTRY
+1️⃣ **Clone the Repository**
+    git clone https://github.com/wade-wilson-00/SENTRY.git
+    cd SENTRY
+
+
 
 2️⃣ Configure Environment Variables
 
