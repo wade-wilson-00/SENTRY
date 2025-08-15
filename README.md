@@ -68,28 +68,35 @@ SENTRY/
     cd client/react-app
     npm install react-router-dom axios framer-motion react-markdown react-icons
     ```
+    
     Backend
     ```bash
     cd server
     npm install express axios cors dotenv mongoose jsonwebtoken bcrypt
     ```
+    
 
 4️⃣ Run the Application
+
     Backend
     ```bash
     cd server
     node server.js
     ```
+    
     Frontend
     ```bash
     cd client/react-app
     npm start
     ```
+    
     MicroServices
     ```bash
     cd ai-service
     uvicorn main:app --reload
     ```
+
+    
 🤝 Contributing
 
 We welcome contributions!
@@ -103,6 +110,8 @@ Commit your changes (git commit -m "Added feature").
 Push to the branch (git push origin feature-name).
 
 Open a Pull Request.
+
+
 
 📜 License
 
