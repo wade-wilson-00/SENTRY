@@ -145,6 +145,14 @@ If you'd like to contribute to **SENTRY**, please follow these steps:
 
 ---
 
+## Screenshots
+
+### Dashboard
+![Dashboard Screenshot](public/dashboard.png)
+
+### Journal Page
+![Journal Page Screenshot](public/journalpage.png)
+
 
 📜 License
 
