@@ -18,25 +18,23 @@
 
 Inspired by Robert Reynolds aka 'Sentry' from Marvel Comics a superhero always ready to help others who suffers.
 
-Sentry is a MERN-stack Mental Health-focused web application that allows users to write journals, track mood with ML Prediction, and receive AI-powered coping tips and Resources that helps.
+Sentry is designed with a motivation to help users with their mental health and well-being, focused on a personalized level, it offers Digital Journaling with an Encrypted Storage of it where users can openly express their thoughts and feelings.
 
-It ensures privacy through encryption of Journals which provides a safe and secure environment that lets user express openly and freely, it highly promotes emotional well-being and importance of Mental Health.
+It also Comes with AI Integration where users will get a more personalized attention on their journals and also ML Mood prediction through sentiment analysis of journals.
 
-**Key Features**  
-✍️ Encrypted Journaling — Securely write and store personal thoughts with end-to-end encryption.
 
-🤖 AI Sentiment Analysis — Personalized and compassionate AI-generated feedback.
-
-😃 Mood Tracking — ML-powered mood detection from journal entries.
-
-🔒 Secure Authentication — User accounts protected with JWT authentication & bcrypt hashing.
-
-🌐 Responsive UI — Minimal, clean, and mobile-friendly design.
+## 📌 Features
+- 📝 Journaling - Secure Encrypted Journal Entries  
+- 😊 Coping Resources - Resources to help in mental wellbeing 
+- 📊 Mood Prediction - Sentiment Analysis based on Journal Entries with ML Model  
+- 🧠 AI Review and Suggestion - Get Personalized AI Suggestions and Review which help in Expressing more with Journals  
+- 🔐 Secure Platform - Strong JWT Token Based Authentication of User Credentials.
+                        Encrypted Storage of User Journals. 
 
 ## 🛠 Tech Stack
-- **Frontend:** React, Framer Motion, React Router, Axios, React Markdown, React Icons  
-- **Backend:** Node.js, Express.js, MongoDB, JWT, Bcrypt, Axios  
-- **AI Service:** FastAPI, Gemini API, Hartman-BERT ML Model, HuggingFace Transformers
+- **Frontend:** React, Tailwind CSS, Framer Motion, React Router, Axios, React Markdown, React Icons  
+- **Backend:** Node.js, Express.js, MongoDB, JWT, Bcrypt, Axios, Hashing  
+- **AI Service:** Python-FastAPI, Gemini API, Hartman-BERT ML Model, HuggingFace Transformers
 
 ## Project Structure
 
@@ -107,30 +105,45 @@ node server.js
 #### Frontend
 ```bash
 cd client/react-app
-npm start
+npm run dev
 ```
 
 #### AI Microservices
 ```bash
 cd ai-service
-uvicorn main:app --reload
+uvicorn gemini_analyzer:app --reload
+uvicorn emotion_analyzer:app --reload
 ```
 
 ---
-🤝 Contributing
+## 🤝 Contributing
 
-We welcome contributions!
+Contributions are always welcome!  
 
-Fork the repository.
+If you'd like to contribute to **SENTRY**, please follow these steps:
 
-Create a feature branch (git checkout -b feature-name).
+1. **Fork** the repository.
+2. Create a new branch for your feature or bugfix:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add: Your descriptive commit message"
+   ```
+4. **Push** to your branch:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. Open a **Pull Request** on GitHub and describe your changes.
 
-Commit your changes (git commit -m "Added feature").
+**Guidelines:**
+- Follow the existing code style and naming conventions.
+- Write clear commit messages.
+- Add comments where necessary for better understanding.
+- Test your code before submitting.
 
-Push to the branch (git push origin feature-name).
-
-Open a Pull Request.
-
+---
 
 
 📜 License
