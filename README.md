@@ -44,77 +44,74 @@ SENTRY/
 
 ## Installation & Setup
 
-1. **Clone the repo**  
+1️⃣ **Clone the repo**  
    ```bash
    git clone https://github.com/wade-wilson-00/SENTRY.git
    cd SENTRY
-````
-
-2. **Setup server**
-
+   ```
+   
+2️⃣ **Setup Environment Variables**
    ```bash
-   cd server
-   npm install
+   server/.env
+   PORT=your_port
+   MONGODB_URI=your_mongo_connection_string
+   JWT_SECRET=your_jwt_secret_here
+
+   ai-service/.env
+   OPENAI_API_KEY=your_openai_api_key_here
+   GEMINI_API_KEY=your_gemini_api_key_here
    ```
+   
+3️⃣ **Install Dependencies**
+    Frontend
+    ```bash
+    cd client/react-app
+    npm install react-router-dom axios framer-motion react-markdown react-icons
+    ```
+    Backend
+    ```bash
+    cd server
+    npm install express axios cors dotenv mongoose jsonwebtoken bcrypt
+    ```
 
-3. **Setup client**
+4️⃣ Run the Application
+    Backend
+    ```bash
+    cd server
+    node server.js
+    ```
+    Frontend
+    ```bash
+    cd client/react-app
+    npm start
+    ```
+    MicroServices
+    ```bash
+    cd ai-service
+    uvicorn main:app --reload
+    ```
+🤝 Contributing
 
-   ```bash
-   cd ../client/react-app
-   npm install
-   ```
+We welcome contributions!
 
-4. **Setup AI service**
+Fork the repository.
 
-   ```bash
-   cd ../../ai-service
-   pip install -r requirements.txt
-   ```
+Create a feature branch (git checkout -b feature-name).
 
-5. **Environment Variables**
-   Each of the `server`, `client`, and `ai-service` folders should have a `.env` file. Sample variables:
+Commit your changes (git commit -m "Added feature").
 
-   ```
-   MONGO_URI=
-   JWT_SECRET=
-   GEMINI_API_KEY=
-   HUGGINGFACE_TOKEN=
-   ```
+Push to the branch (git push origin feature-name).
 
-6. **Run the steps**
+Open a Pull Request.
 
-   * In `server`: `npm run dev`
-   * In `client/react-app`: `npm start`
-   * In `ai-service`: `uvicorn main:app --reload`
+📜 License
 
-7. **Visit the app:** `http://localhost:3000`
+MIT License — Free to use and modify for learning purposes.
 
-## Usage
 
-* Register and authenticate your account securely.
-* Write private entries; sentiment and mood analysis happen automatically.
-* View your mood trends and receive AI-generated coping suggestions.
 
-## Contributing
 
-* Fork and create a new feature branch.
-* Commit with clear, meaningful messages.
-* Push and open a pull request describing your changes.
-
-## License
-
-MIT License
-
----
-
-## Explanation of the Badges
-
-Each badge reflects a key component of SENTRY’s tech stack:
-
-* React, Tailwind CSS, Framer Motion: Frontend framework, styling, and UI animation.
-* Node.js & Express.js: Backend runtime and web framework.
-* MongoDB: NoSQL database.
-* JWT & bcrypt: Authentication and password security.
-* FastAPI, Gemini API, Hugging Face Transformers: AI-powered features and sentiment analysis.
-
-Let me know if you'd like adjustments—maybe add a Contribution badge, CI status, or anything else!
+    
+    
+   
+   
