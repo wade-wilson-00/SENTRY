@@ -1,10 +1,4 @@
-Here’s a refined **README** for your **SENTRY** project, complete with a polished structure, installation guide, usage tips, and badges showcasing the tech stack—perfect for giving potential users or collaborators a crisp, professional overview.
 
----
-
-## README for **SENTRY**
-
-```markdown
 # SENTRY
 
 [![Frontend: React](https://img.shields.io/badge/Frontend-React-blue)](https://reactjs.org)
