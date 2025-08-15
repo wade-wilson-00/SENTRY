@@ -40,6 +40,8 @@ router.get('/all', authenticateJournal, async (req, res) => {
     const decryptedJournals = journals.map(journal => ({
       ...journals._doc,
       content: decrypt(journal.content),
+      createdAt: journal.createdAt ? new Date(journal.createdAt) : null,
+      updatedAt: journal.updatedAt ? new Date(journal.updatedAt) : null,
     }));
 
     console.log("📚 All Journals Retrieved:", decryptedJournals.length);
@@ -50,9 +52,5 @@ router.get('/all', authenticateJournal, async (req, res) => {
     res.status(500).json({ message: 'Error retrieving journals' });
   }
 });
-
-
-
-
 
 module.exports = router;
