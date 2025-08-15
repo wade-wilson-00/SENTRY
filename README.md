@@ -41,62 +41,74 @@ SENTRY/
 └── server/             # Backend API and core logic
 
 ````
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/wade-wilson-00/SENTRY.git
+cd SENTRY
+```
 
-## Installation & Setup
+---
 
-1️⃣ **Clone the repo**  
-   ```bash
-   git clone https://github.com/wade-wilson-00/SENTRY.git
-   cd SENTRY
-   ```
-   
-2️⃣ **Setup Environment Variables**
-   ```bash
-   server/.env
-   PORT=your_port
-   MONGODB_URI=your_mongo_connection_string
-   JWT_SECRET=your_jwt_secret_here
+### 2️⃣ Setup Environment Variables
 
-   ai-service/.env
-   OPENAI_API_KEY=your_openai_api_key_here
-   GEMINI_API_KEY=your_gemini_api_key_here
-   ```
-   
-3️⃣ **Install Dependencies**
-    Frontend
-    ```bash
-    cd client/react-app
-    npm install react-router-dom axios framer-motion react-markdown react-icons
-    ```
-    
-    Backend
-    ```bash
-    cd server
-    npm install express axios cors dotenv mongoose jsonwebtoken bcrypt
-    ```
-    
+#### `server/.env`
+```
+PORT=your_port
+MONGODB_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret_here
+```
 
-4️⃣ Run the Application
+#### `ai-service/.env`
+```
+OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
+```
 
-    Backend
-    ```bash
-    cd server
-    node server.js
-    ```
-    
-    Frontend
-    ```bash
-    cd client/react-app
-    npm start
-    ```
-    
-    MicroServices
-    ```bash
-    cd ai-service
-    uvicorn main:app --reload
-    ```
+---
 
-    
+### 3️⃣ Install Dependencies
+
+#### Frontend
+```bash
+cd client/react-app
+npm install react-router-dom axios framer-motion react-markdown react-icons
+```
+
+#### Backend
+```bash
+cd server
+npm install express axios cors dotenv mongoose jsonwebtoken bcrypt
+```
+
+#### AI Microservice
+```bash
+cd ai-service
+pip install fastapi uvicorn pydantic requests python-dotenv
+```
+
+---
+
+### 4️⃣ Run the Application
+
+#### Backend
+```bash
+cd server
+node server.js
+```
+
+#### Frontend
+```bash
+cd client/react-app
+npm start
+```
+
+#### AI Microservices
+```bash
+cd ai-service
+uvicorn main:app --reload
+```
+
+---
 🤝 Contributing
 
 We welcome contributions!
